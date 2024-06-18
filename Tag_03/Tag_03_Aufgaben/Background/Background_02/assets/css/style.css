@@ -1,0 +1,14 @@
+section{
+    background-image: url(../jpg/photo-1460602594182-8568137446ce.avif);
+    display: inline-block;
+    background-size: contain;
+    text-align: center;
+    color: white;
+    width: 100%;
+}
+article{
+    background-image: url(../jpg/photo-1603398749947-87246022fbf9.avif);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: right top;
+}

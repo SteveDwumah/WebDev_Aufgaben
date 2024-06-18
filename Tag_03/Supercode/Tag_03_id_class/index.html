@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="de">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <title>Classes & Id's</title>
+</head>
+
+<body id="top">
+    <header>
+        <nav id="nav-top">
+            <a href="#section__one">Section one</a>
+            <a href="#section__two">Section two</a>
+            <a href="#section__three">Section three</a>
+        </nav>
+    </header>
+
+    <!-- ******* BEM ******** -->
+    <!-- - Block, Element, Modifier -->
+
+    <main>
+
+        <h1>Hallo Kurs, heute wird es KLASSE!! </h1>
+
+        <div class="card"> <!-- - Block -->
+            <h2>Hier könnt ihr zum Thema <a href="https://getbem.com/naming/" target="_blank">BEM</a> mehr erfahren</h2>
+            <div class="card__header">Header</div> <!-- - Element -->
+            <div class="card__body">
+                <p class="card__text"><span>Block:</span> ist eine eigenständige"Komponente" die ein spezifisches Layout
+                    darstellt z.B.:
+                    "header, footer, ein menu oder auch button" </p>
+                <p class="card__text"><span>Element:</span> ist ein Bestandteil eines Blocks, der ohne den Block keine
+                    eigenständige
+                    Bedeutung hat. Sie sind durch doppelte Unterstriche "__" mit dem Blocknamen verbunden. </p>
+                <p class="card__text"><span>Modifier:</span> ist eine Variante eines Blocks oder Element, die dessen
+                    Aussehen, Verhalten
+                    oder Zustand verändert. Sie sind durch doppelte Bindestriche "--" mit dem Block- oder Elementnamen
+                    verbunden</p>
+                <p class="card__text card__text--hover">Ich werde gehovert</p>
+            </div>
+            <!-- - Modifier -->
+            <div class="card__footer card__footer--highlight">Footer</div>
+        </div>
+
+
+        <section class="article-section article-section--highlighted">
+            <p class="p-bgPurple p-font-size"><span>p-bgPurple</span> -> Nicht gut -> <span>Begründung:</span> <br>Der
+                Klassenname
+                ist nicht semantisch und enthält sowohl ein Element (p) als auch eine Stileigenschaft.Besser wäre es,
+                Klassen nach ihrer Funktion oder Bedeutung zu benennen, nicht nach ihrem Aussehen. Zudem sollte die
+                Klasse nicht auf ein bestimmtes HTML-Element beschränkt sein. <br> <br> <span>p-font-siz</span> -> Nicht
+                gut
+                -> <span>Begründung:</span> <br> Ähnlich wie bei p-bgPurple ist der Name nicht semantisch und beschreibt
+                das
+                Aussehen statt die Funktion.
+            </p>
+            <br>
+
+            <p class="p-bgPurple textColor "><span>textColor</span>Nicht gut -> <span>Begründung:</span> Auch hier
+                ist der
+                Klassenname ist nicht spezifisch genug und beschreibt nur das Aussehen. </p>
+
+            <br>
+            <h2>So wäre es besser</h2>
+
+            <p class="article-section__paragraph--bg-purple article-section__paragraph--font-large">
+                <span>paragraph--font-large:</span> Entfernt die
+                Abhängigkeit vom HTML-Element und beschreibt semantisch die Funktion.
+            </p>
+            <br>
+
+            <p
+                class="article-section__paragraph article-section__paragraph--bg-purple article-section__paragraph--color">
+                <span>paragraph--text-color:</span> Beschreibt die
+                Funktion genauer und
+                semantisch korrekt.
+            </p>
+        </section>
+
+
+
+        <!-- - Pseudo Elemente -->
+        <section class="pseudo-section">
+            <h2>Pseudo Elemente</h2>
+            <ul class="pseudo-section__list">
+                <li class="pseudo-section__list-item">before & after</li>
+                <li class="pseudo-section__list-item">before & after</li>
+                <li class="pseudo-section__list-item">before & after</li>
+                <li class="pseudo-section__list-item">before & after</li>
+            </ul>
+            <p class="pseudo-section__text"><span>first-line</span> wird verwendet, um den ersten
+                Textabschnitt der
+                ersten Zeile zu stylen.
+                Consequuntur dolor cum molestiae dolorem, optio
+                facere. Placeat incidunt perspiciatis sapiente? Soluta eligendi nihil magni? Adipisci quos ipsa
+                repudiandae nostrum deserunt! Id dolores adipisci nemo blanditiis molestiae voluptate sequi officiis
+                illum laudantium tempora pariatur totam, error numquam ipsum eligendi. Rem, dolorem ea?</p>
+        </section>
+        <hr>
+
+        <h2>Background Images</h2>
+        <!-- - Image erscheint beim hovern des buttons -->
+        <section class="interactive">
+            <button class="interactive__btn">Hover me!</button>
+            <div class="interactive__img-container">
+                <img class="interactive__img" src="./assets/img/smiling_friends.png" alt="Smiling Friend">
+            </div>
+        </section>
+
+        <!-- - Background Images -->
+        <section class="gallery">
+            <div class="gallery__img"></div>
+            <div class="gallery__img"></div>
+            <div class="gallery__img"></div>
+        </section>
+
+
+        <!-- ? Ankerpunkte für die Navigation -->
+        <section id="section__one">
+            <a href="#top">back to top!</a>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt ab dolore numquam tenetur cum alias
+                rerum provident ipsam quo architecto. Iusto sunt expedita debitis incidunt doloribus omnis aliquam,
+                numquam eligendi quo rem quibusdam obcaecati accusantium, quisquam odio neque ea eveniet minima? Fuga
+                neque officiis soluta facilis? Velit qui obcaecati a doloremque aspernatur, explicabo quis. Deleniti
+                expedita, possimus sit consectetur eius repellendus beatae amet distinctio, fugiat in harum doloremque
+                incidunt labore rerum. Cupiditate illum aspernatur fugit dolor saepe mollitia nisi, veritatis voluptate
+                corporis corrupti repudiandae sequi dolorem reiciendis ipsam fuga autem laudantium minima molestiae et
+                eveniet aliquam necessitatibus qui consectetur. Iste!</p>
+        </section>
+        <section id="section__two">
+            <a href="#nav-top">back to top!</a>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt ab dolore numquam tenetur cum alias
+                rerum provident ipsam quo architecto. Iusto sunt expedita debitis incidunt doloribus omnis aliquam,
+                numquam eligendi quo rem quibusdam obcaecati accusantium, quisquam odio neque ea eveniet minima? Fuga
+                neque officiis soluta facilis? Velit qui obcaecati a doloremque aspernatur, explicabo quis. Deleniti
+                expedita, possimus sit consectetur eius repellendus beatae amet distinctio, fugiat in harum doloremque
+                incidunt labore rerum. Cupiditate illum aspernatur fugit dolor saepe mollitia nisi, veritatis voluptate
+                corporis corrupti repudiandae sequi dolorem reiciendis ipsam fuga autem laudantium minima molestiae et
+                eveniet aliquam necessitatibus qui consectetur. Iste!</p>
+        </section>
+        <section id="section__three">
+            <a href="#nav-top">back to top!</a>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt ab dolore numquam tenetur cum alias
+                rerum provident ipsam quo architecto. Iusto sunt expedita debitis incidunt doloribus omnis aliquam,
+                numquam eligendi quo rem quibusdam obcaecati accusantium, quisquam odio neque ea eveniet minima? Fuga
+                neque officiis soluta facilis? Velit qui obcaecati a doloremque aspernatur, explicabo quis. Deleniti
+                expedita, possimus sit consectetur eius repellendus beatae amet distinctio, fugiat in harum doloremque
+                incidunt labore rerum. Cupiditate illum aspernatur fugit dolor saepe mollitia nisi, veritatis voluptate
+                corporis corrupti repudiandae sequi dolorem reiciendis ipsam fuga autem laudantium minima molestiae et
+                eveniet aliquam necessitatibus qui consectetur. Iste!</p>
+        </section>
+
+
+    </main>
+
+
+</body>
+
+</html>

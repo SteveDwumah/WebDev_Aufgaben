@@ -1,0 +1,70 @@
+h1::first-letter{
+    color: red;
+}
+li.punkt_1{
+    text-decoration: line-through;
+    font-weight: 1000;
+    list-style: none;
+}
+li.punkt_1::before{
+    content: url("../png/check.png");
+}
+li.punkt_1::after{
+    content: url(../png/gym.png);
+}
+li.punkt_2{
+    text-decoration: line-through;
+    font-weight: 1000;
+    list-style: none;
+}
+li.punkt_2::before{
+    content: url(../png/check.png);
+}
+li.punkt_2::after{
+    content: url(../png/bill.png);
+}
+li.punkt_3{
+    font-weight: 1000;
+    list-style: none;
+}
+li.punkt_3::before{
+    content: url(../png/doing.png);
+}
+li.punkt_3::after{
+    content: url(../png/dance.png);
+}
+li.punkt_4{
+    font-weight: 1000;
+    list-style: none;
+}
+li.punkt_4::before{
+    content: url(../png/doing.png);
+}
+li.punkt_4::after{
+    content: url(../png/eat.png)
+}
+li.punkt_5{
+    text-decoration: underline;
+    font-weight: 1000;
+    list-style: none;
+}
+li.punkt_5::before{
+    content: url(../png/no.png);
+}
+li.punkt_5::after{
+    content: url(../png/book.png);
+}
+li.punkt_6{
+    text-decoration: underline;
+    font-weight: 1000;
+    list-style: none;
+}
+li.punkt_6::before{
+    content: url(../png/no.png);
+}
+li.punkt_6::after{
+    content: url(../png/organize.png);
+}
+main{
+    margin: 20px auto;
+    }

@@ -1,0 +1,19 @@
+nav{
+    background-color:darkgray;
+}
+a{
+    display: block;
+    color: red; 
+}
+.Bild1 img{
+    width: 400px;height: 400px;
+}
+span{
+    color: red;}
+    
+.Bild2 img{
+    width: 600px;height: 600px;
+}
+.Bild3 img{
+    width: 800px;height: 600px;
+}

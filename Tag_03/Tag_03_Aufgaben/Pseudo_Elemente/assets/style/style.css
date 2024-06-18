@@ -1,0 +1,113 @@
+h3::first-letter{
+    color: rgb(26, 125, 125);
+    font-size: 32px;
+    }
+li.text_1::first-letter{
+    font-size: 32px;
+    text-decoration: overline;
+    color: aqua;
+    font-weight: 500;
+   }
+   li.text_1::first-line{
+    font-weight: 1000;
+   }
+li.text_2::first-letter{
+    font-size: 32px;
+    text-decoration: underline;
+    color: rgb(156, 7, 7);
+    font-weight: 500;
+}
+li.text_2::first-line{
+    font-weight: 1000;
+}
+li.text_3::first-letter{
+    font-size: 32px;
+    text-decoration: line-through;
+    color: limegreen;
+    font-weight: 500;
+}
+li.text_3::first-line{
+    text-decoration: line-through;
+    font-weight: 1000;
+}
+li.text_4{
+    text-align: right;
+    font-weight: 1000;
+    font-size: 20px;
+    list-style: none;
+    color: cadetblue;
+}
+h3:hover::first-letter{
+    background-color: rgb(113, 172, 172);
+}
+.text_5{
+    color: cadetblue;
+    font-weight: 800;
+}
+p.text_6::first-letter{
+    color: red;
+    font-size: 32px;
+    font-weight: 1000;
+}
+p.text_6::first-line{
+    color: green;
+    font-weight: 1000;
+    font-size: 20px;
+}
+p.text_6{
+    font-weight: 1000;
+    font-size: 20px;
+}
+p.text_7::first-letter{
+    color: red;
+    font-weight: 1000;
+    font-size: 20px;
+}
+p.text_7::first-line{
+    font-weight: 1000;
+    color: green;
+
+}
+p.text_7{
+    font-weight: 1000;
+}
+p.text_8::first-letter{
+    color: red;
+    font-size: 32px;
+    font-weight: 1000;
+}
+p.text_8::first-line{
+    color: green;
+    font-weight: 1000;
+    font-size: 20px;
+}
+p.text_8{
+    font-weight: 1000;
+    font-size: 20px;
+}
+p.text_9::first-letter{
+    color: red;
+    font-size: 20px;
+    font-weight: 1000;
+}
+p.text_9::first-line{
+    color: green;
+    font-weight: 1000;
+}
+p.text_9{
+    font-weight: 1000;
+}
+p.text_10::first-letter{
+    font-size: 32px;
+    font-weight: 1000;
+    color: red;
+}
+p.text_10::first-line{
+    font-size: 20px;
+    font-weight: 1000;
+    color: green;
+}
+p.text_10{
+    font-size: 20px;
+    font-weight: 1000;
+}

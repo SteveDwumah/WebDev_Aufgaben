@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Selektoren</title>
+
+    <style>
+        /* ? typselektoren */
+        header {
+            text-align: center;
+            background: lightskyblue;
+        }
+
+        /* Nachfahrenselektor */
+        header h1,
+        header p {
+            color: white;
+        }
+
+        /* Gruppierte Selektor */
+        h3,
+        a {
+            color: blueviolet;
+        }
+
+        /* Indirekter Nachbar ODER Geschwisterselektor */
+        h4~p {
+            color: darkblue;
+        }
+
+        /* Kind Selektor */
+        section>p {
+            background-color: aqua;
+        }
+
+        section>article>p {
+            background-color: lightgreen;
+        }
+
+        h5+p {
+            font-weight: bold;
+        }
+    </style>
+</head>
+
+<body>
+    <header> <!-- - Nachfahrenselektor -->
+        <h1>Selektoren</h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam fugiat cum sit assumenda, laboriosam facilis!
+        </p>
+    </header>
+
+    <div>
+        <h3>Gruppierte Selektor - getrennt durch ein ","</h3>
+        <a href="https://wiki.selfhtml.org/wiki/CSS/Tutorials/Selektoren/einfacher_Selektor#Typ-Selektor">selfhtml</a>
+        <a href="https://www.mediaevent.de/css/css-selektor-kontextselektor.html">mediaevent</a>
+    </div>
+
+    <div>
+        <h4>Indirekte Nachbar ~ Selektor</h4>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit, sequi!</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit, sequi!</p>
+    </div>
+
+    <section>
+        <h5>Kind > Selektor</h5>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates, totam?</p>
+        <article>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem, quia.</p>
+        </article>
+    </section>
+
+    <div>
+        <h5>Direkter Nachbar + Selektor</h5>
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quia, odio!</p>
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quia, odio!</p>
+    </div>
+
+
+</body>
+
+</html>

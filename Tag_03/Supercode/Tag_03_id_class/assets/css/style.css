@@ -1,0 +1,212 @@
+/* ! Schrift kommen immer nach oben und sollten möglichts an erstestelle stehen */
+@font-face{
+    font-family: robotoBlack;
+    src: url("../font/Roboto-Black.ttf");
+}
+@font-face{
+    font-family: robotoRegular;
+    src: url("../font/Roboto-Regular.ttf");
+}
+
+/* ! Globales Styling */
+*{   
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html{
+    scroll-behavior: smooth;
+    font-family: robotoRegular;
+}
+
+/* ? root ist eine Pseudoklasse & das höchste Element des Dokuments und dient hauptsächlich der erwaltung von CSS-Variablen */
+:root{  
+    --font-color: #ff6767;
+    --font-weight: 900;
+}
+
+span{
+    font-weight: var(--font-weight);
+    color: blue;
+} 
+
+li{
+    list-style: none;
+}
+
+a{
+    text-decoration: none;
+    padding: 15px;
+}
+
+h2{
+    text-align: center;
+    margin-bottom: 15px;
+    margin: 10px 0;
+}
+
+/* ********** BEM Klassen für card ********** */
+.card {
+    border: 2px solid black;
+    padding: 10px;
+}
+
+.card__header {
+    color: blue;
+}
+
+.card__body {
+    margin: 10px 0;
+}
+
+.card__text {
+    padding: 10px 0;
+}
+
+.card__text--hover:hover {
+    color: var(--font-color);
+    background-color: black;
+}
+
+.card__footer--highlight {
+    background-color: lime;
+}
+
+
+/* ********** BEM Klassen für article-section ********** */
+
+.article-section {
+  padding: 20px;
+}
+
+.article-section--highlighted {
+  background-color: #f0f0f0;
+}
+
+.article-section__paragraph {
+  margin-bottom: 10px;
+}
+
+.article-section__paragraph--bg-purple {
+  background-color: rgb(236, 150, 236);
+}
+
+.article-section__paragraph--font-large {
+  font-size: 18px;
+}
+
+.article-section__paragraph--color {
+  color: #ffffff; 
+}
+
+
+/* ********* Pseudo-Elemente ********* */
+
+.pseudo-section{
+    width: 800px;
+    margin: 10px auto;
+    text-align: center;
+}
+
+.pseudo-section__list{
+    margin: 5px 0px 15px 0px;
+    /* list-style: none; */ // besser ist es, die nach oben in den globalen styles hinzuzufügen und mit li ansprechen
+}
+
+.pseudo-section__list-item::before{
+    content: "💥";
+}
+
+.pseudo-section__list-item::after{
+    content: "🌚";
+}
+
+.pseudo-section__text::first-line{
+    font-size: 20px;
+    font-weight: var(--font-weight);
+    color: var(--font-color);
+} 
+
+/*.pseudo-section__list-item::after{
+    background-image: url("../img/cloud-moon-svgrepo-com.svg");
+    content: "";
+    background-size: 10px 20px;
+    display: inline-block;
+    width: 10px; 
+    height: 20px;
+} */
+
+h1::first-letter{
+    font-size: 70px;
+    color: var(--font-color);
+}
+
+.pseudo-section__paragraph::selection{
+    color: blue;
+    background-color: greenyellow;
+}
+
+/* ********* Background Image ********* */
+
+.interactive__btn {
+  width: 100px;
+  background-color: deeppink;
+  border: none;
+  color: white;
+  padding: 5px 15px;
+  margin: 10px auto;
+  border-radius: 10px;
+  display: block;
+}
+
+/* ! Hover-Effekt, um das Bild anzuzeigen */
+.interactive__btn:hover + .interactive__img-container img {
+  display: block;
+}
+
+/* ! Styles für den Bildcontainer */
+.interactive__img-container {
+  max-width: 500px;
+  margin: 0 auto;
+}
+
+/* ! Styles für das Bild */
+.interactive__img {
+  width: 100%;
+  display: none; // das Bild ist hierdurch nicht sichtbar
+}
+
+/* ******** Gallery Section ******** */
+.gallery{
+    margin: 0 auto;
+    text-align: center;
+}
+.gallery__img{
+    background-image: url("../img/photo-1569081156361-c98e05e7f1e4.avif");
+    background-size: contain;
+    background-repeat: no-repeat;
+    margin: 30px 20px;
+    height: 400px;
+    width: 300px;
+    display: inline-block;
+}
+
+/* ******** ID + Navigation ******** */
+
+
+#section__one, #section__two, #section__three{
+    height: 100vh;
+}
+
+#section__one{
+    background-color: blueviolet;
+}
+
+#section__two{
+    background-color: aqua;
+}
+
+#section__three{
+    background-color: darkkhaki;
+}

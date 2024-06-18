@@ -1,0 +1,20 @@
+
+h1{
+    color: cadetblue;
+    font-size: 50px;
+}
+
+h2{
+    color: blue;
+}
+
+h3{
+    color: darkmagenta;
+    background-color: cornflowerblue;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+
+section>ul>li>span{
+    color: tomato;
+}
+    
