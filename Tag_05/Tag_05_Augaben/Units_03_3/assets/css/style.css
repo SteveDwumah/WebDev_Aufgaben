@@ -1,0 +1,40 @@
+body{
+    background-image: url(../img/andrew-coelho-aL7SA1ASVdQ-unsplash.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    text-align: center;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+
+}
+
+h1{
+    font-size: 116px;
+    color: rgba(230, 230, 250, 0.521);
+}
+
+h2{
+    font-size: 40px;
+    color: rgba(230, 230, 250, 0.694);
+}
+
+button{
+    background-color: rgba(230, 230, 250, 0.521);
+    color: darkgreen;
+    
+    border-radius: 5px;
+    border-style: none;
+    padding: 3px 6px;
+}
+p{
+    font-size: 20px;
+    color: rgba(230, 230, 250, 0.597);
+}
+div{
+    margin-top: 175px;
+}
+
+button a{
+    font-weight: 700;
+    text-decoration: none;
+    color: rgb(6, 65, 6);
+}

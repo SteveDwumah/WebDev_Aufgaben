@@ -1,0 +1,27 @@
+
+
+
+
+body {
+    background-image: url(../img/karsten-winegeart-gJhshvevLFA-unsplash.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding-top: 250px;
+}
+
+.text{
+    background-color: rgba(128, 128, 128, 0.612);
+    /* opacity: 0.6; */
+    width: 1000px;
+    height: 300px;
+    margin: auto;
+    padding: 20px;
+    
+
+
+}
+.text p{
+    color: white;
+    font-size: 50px;
+    text-align: center;
+}

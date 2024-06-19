@@ -1,0 +1,34 @@
+
+
+main {
+    padding: 5%;
+}
+
+body {
+    background-image: url(../img/szabo-viktor-_h57ooIvgZ0-unsplash.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    text-align: center;
+
+}
+
+h1 {
+    font-size: 2rem;
+    text-shadow: 2px 2px 3px white;
+    padding: 0px 15%;
+}
+
+article {
+    height: 300px;
+    margin: 0px 100px;
+    border-radius: 5rem;
+    background-color: whitesmoke;
+    padding: 2%;
+}
+h2 {
+    font-size: 1.5em;
+
+}
+p {
+    font-size: 14px;
+}

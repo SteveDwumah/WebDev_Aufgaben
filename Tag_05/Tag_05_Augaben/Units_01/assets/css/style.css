@@ -1,0 +1,38 @@
+
+
+
+
+
+
+
+.container{
+   display:flex;
+   width: 600px;
+
+    
+}
+
+.container
+
+div {
+    margin: 0 20px;
+}
+
+.bild1 img{
+    width: 400px;
+}
+.bild2 img{
+   width: 50%; 
+}
+.bild3 img{
+    width: 20em; 
+ }
+ .bild4 img{
+    width: 40rem; 
+ }
+ .bild5 img{
+    width: 35vw; 
+ }
+ .bild6 img{
+    width: 75vh; 
+ }
