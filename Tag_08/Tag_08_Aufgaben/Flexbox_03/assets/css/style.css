@@ -1,0 +1,109 @@
+@font-face {
+    font-family: Raleway;
+    src: url(../fonts/Raleway-VariableFont_wght.ttf);
+}
+
+* {
+    font-family: Raleway;
+    margin: 0;
+}
+header{
+    height: 76px;
+    
+}
+
+nav{
+    display: flex;
+    background-color: white;
+    align-items: center;
+    justify-content: space-between;
+    padding: 15px;
+    margin: 0;
+
+}
+ul{
+    display: inline-flex;
+    list-style: none;
+    justify-content: space-between;
+    margin-right: 40px;
+}
+
+a{
+    text-decoration: none;
+    margin: 10px;
+}
+.logo{
+    color: #666;
+    font-size: 30px;
+    margin-left: 100px;
+}
+ul a{
+    color: #333;
+}
+a:hover{
+    color:rgb(100, 49, 210);
+}
+
+body {
+    background-image: url(../images/matt-hardy-6ArTTluciuA-unsplash.jpg);
+    width: 100%;
+    height: auto;
+    background-size: cover;
+    background-repeat: no-repeat;
+
+}
+article{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    height: 100vh;
+    justify-content: center;
+    color: white;
+
+    
+}
+
+h1{
+    font-size: 60px;
+    text-align: center;
+    line-height: 64px;
+    font-weight: 400;
+    margin-bottom: 30px;
+
+}
+p{
+    font-size: 14px;
+    font-weight: 400;
+}
+
+.button_box {
+    margin-top: 40px;
+}
+
+button{
+    color: red;
+    background-color: green;
+    background-size: 20px;
+    padding: 10px 35px;
+}
+button:nth-of-type(1){
+    background-color: rgb(100, 49, 210);
+    color: white;
+    border: 2px solid rgb(100, 49, 210);
+    transition: 0.3s;
+}
+button:nth-of-type(2){
+    background-color: rgba(255, 255, 255, 0);
+    color: white;
+    border: 2px solid white;
+    transition: 0.3s;
+}
+button:nth-of-type(1):hover{
+    background-color: rgba(79, 37, 168, 0.875);
+    color: white;
+}
+button:nth-of-type(2):hover{
+    background-color: white;
+    color: black;
+
+}
