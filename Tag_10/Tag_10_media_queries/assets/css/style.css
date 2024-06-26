@@ -1,0 +1,132 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Raleway";
+}
+@font-face {
+    font-family: "Raleway";
+    src: url(../fonts/Raleway-Regular.ttf);
+}    
+
+header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 3vw;
+}
+nav{
+    display: flex;
+    height: 7svh;
+    align-items: center;
+}
+.navigation{
+    display: none;
+}
+
+.burger {
+    background-color: #745cf9;
+    height: 4px;
+    width: 30px;
+    margin: 2px;
+    border-radius: 10px;
+  }
+
+section{
+    background-image: url(../img/matt-hardy-6ArTTluciuA-unsplash.jpg);
+    height: 100svh;
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    align-items: center;
+}
+.hero{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+h1{
+    font-size: 3rem;
+    color: white;
+    margin-left: 20vw;
+    
+}
+h2{
+    font-weight: normal;
+    color: #666;
+}
+.text{
+    /* padding: 0 30px; */
+    font-size: 1rem;
+    color: white;
+    text-align: center;
+    margin: 7vh 1vw;
+}
+.buttons{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.buttons a:nth-of-type(1), a:nth-of-type(2){
+    height: 5vh;
+    width: 45vw;
+    text-align: center;
+    text-decoration: none;
+    padding: 1.3vh 2vh;
+    margin-top: 2vh;
+    transition: 0.3s;
+}
+.buttons a:nth-of-type(1){
+    border: 2px solid #745cf9;
+    background-color: #745cf9;;
+    color: white;
+    font-size: 0.9rem;
+}
+.buttons a:nth-of-type(2){
+    border: 2px solid white;
+    background-color: rgba(255, 255, 255, 0);
+    color: white;
+    font-size: 0.9rem;
+}
+.buttons a:nth-of-type(1):hover{
+    background-color: #735cf9a9;
+    border: 2px solid #735cf9a9;
+}
+.buttons a:nth-of-type(2):hover{
+    background-color: white;
+    border: 2px solid white;
+    color: black;
+}
+
+@media only screen and (min-width: 768px){
+.buttons{
+    flex-direction: row;
+    justify-content: center;
+}
+.buttons a:nth-of-type(1), a:nth-of-type(2){
+    width: 30vw;
+    margin: 0 2vw;
+    padding-top: 1.5vh;
+}    
+}
+@media only screen and (min-width: 992px) {
+.burger-wrapper{
+    display: none;
+}
+.navigation{
+    display: flex;
+}
+nav{
+    justify-content: flex-end;
+}
+.text{
+    margin-left: 22vw;
+}
+.buttons{
+    margin-left: 20vw;
+}
+.buttons a:nth-of-type(1), a:nth-of-type(2) {
+    width: 14vw
+}
