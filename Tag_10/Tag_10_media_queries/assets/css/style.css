@@ -13,16 +13,18 @@ header{
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 0 3vw;
+    
 }
 nav{
-    display: flex;
-    height: 7svh;
-    align-items: center;
-}
-.navigation{
     display: none;
+    /* height: 7svh;
+    align-items: center;
+    padding: 0 3vw; */
+
 }
+/* .navigation>a{
+    display: none;
+} */
 
 .burger {
     background-color: #745cf9;
@@ -69,7 +71,7 @@ h2{
     flex-direction: column;
     align-items: center;
 }
-.buttons a:nth-of-type(1), a:nth-of-type(2){
+.buttons>a{
     height: 5vh;
     width: 45vw;
     text-align: center;
@@ -78,55 +80,61 @@ h2{
     margin-top: 2vh;
     transition: 0.3s;
 }
-.buttons a:nth-of-type(1){
+.buttons>a:nth-of-type(1){
     border: 2px solid #745cf9;
-    background-color: #745cf9;;
+    background-color: #745cf9;
     color: white;
     font-size: 0.9rem;
 }
-.buttons a:nth-of-type(2){
+.buttons>a:nth-of-type(2){
     border: 2px solid white;
     background-color: rgba(255, 255, 255, 0);
     color: white;
     font-size: 0.9rem;
 }
-.buttons a:nth-of-type(1):hover{
+.buttons>a:nth-of-type(1):hover{
     background-color: #735cf9a9;
     border: 2px solid #735cf9a9;
 }
-.buttons a:nth-of-type(2):hover{
+.buttons>a:nth-of-type(2):hover{
     background-color: white;
     border: 2px solid white;
     color: black;
 }
 
 @media only screen and (min-width: 768px){
-.buttons{
-    flex-direction: row;
-    justify-content: center;
-}
-.buttons a:nth-of-type(1), a:nth-of-type(2){
-    width: 30vw;
-    margin: 0 2vw;
-    padding-top: 1.5vh;
-}    
+    .buttons{
+        flex-direction: row;
+        justify-content: center;
+    }
+    .buttons>a {
+        width: 30vw;
+        margin: 0 2vw;
+        padding-top: 1.5vh;
+    }    
 }
 @media only screen and (min-width: 992px) {
-.burger-wrapper{
-    display: none;
-}
-.navigation{
-    display: flex;
-}
-nav{
-    justify-content: flex-end;
-}
-.text{
-    margin-left: 22vw;
-}
-.buttons{
-    margin-left: 20vw;
-}
-.buttons a:nth-of-type(1), a:nth-of-type(2) {
-    width: 14vw
+    .burger-wrapper{
+        display: none;
+    }
+    
+    .navigation{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 50vw;
+        
+    }
+    nav{
+        justify-content: flex-end;
+    }
+    .text{
+        margin-left: 22vw;
+    }
+    .buttons{
+        margin-left: 20vw;
+    }
+    .buttons>a {
+        width: 14vw;
+    }
 }
