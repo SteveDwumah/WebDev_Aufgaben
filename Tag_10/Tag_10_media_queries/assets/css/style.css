@@ -13,18 +13,21 @@ header{
     display: flex;
     align-items: center;
     justify-content: space-between;
+    height: 7svh;
+    text-decoration: none;
     
 }
 nav{
     display: none;
-    /* height: 7svh;
+    height: 7svh;
     align-items: center;
-    padding: 0 3vw; */
+    padding: 0 3vw;
+    
 
 }
-/* .navigation>a{
-    display: none;
-} */
+.burger-wrapper{
+    padding-right: 5vw;
+}
 
 .burger {
     background-color: #745cf9;
@@ -58,6 +61,7 @@ h1{
 h2{
     font-weight: normal;
     color: #666;
+    padding-left: 5vw;
 }
 .text{
     /* padding: 0 30px; */
@@ -123,7 +127,6 @@ h2{
         justify-content: space-between;
         align-items: center;
         width: 50vw;
-        
     }
     nav{
         justify-content: flex-end;
