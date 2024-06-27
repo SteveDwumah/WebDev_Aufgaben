@@ -1,0 +1,104 @@
+@font-face {
+    font-family: "Ubuntu";
+    src: url(../fonts/Ubuntu-Regular.ttf);
+}
+@font-face {
+    font-family: "Monoton";
+    src: url(../fonts/Monoton-Regular.ttf);
+}
+
+body{
+    background-color: #1D2025;
+}
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 30px;
+    font-family: Ubuntu;
+    border-bottom: 1px solid #6F6864;
+    height: 10vh;
+}
+a:nth-of-type(1){
+    color: white;
+    text-decoration: none;
+}
+.logo{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 14vw;
+    
+}
+.logo a{
+    text-decoration: none;
+    color: #6F6864;
+}
+p{
+    font-family: "Monoton";
+    font-size: 2rem;
+    color: #6F6864;
+}
+
+
+
+a:nth-of-type(2), a:nth-of-type(3), a:nth-of-type(4){
+    color: #6F6864;
+    text-decoration: none;
+}
+h1{
+    font-family: "Ubuntu";
+    color: white;
+    font-size: 4rem;
+    width: 22vw;
+}
+
+.social{
+    display: flex;
+
+}
+.social svg{  
+    width: 2vw;
+    fill: white;
+}
+main{
+    display: flex;
+    justify-content: space-between;
+}
+.text{
+    width: 10vw;
+}
+.text a{
+    color: #B0805D;
+    font-size: 16px;
+}
+.bilder{
+    display: flex;
+    justify-content: space-between;
+    width: 60vw;
+}
+img{
+    height: 600px;
+}
+.buttons{
+    width: 6vw;
+    display: flex;
+    justify-content: space-between;
+}
+
+.buttons a{
+    display: flex;
+    width: 40px;
+    height: 13.5px;
+    padding: 12.5px 0px;
+    justify-content: center;
+    align-items: center;
+    color:white;
+    border: 2px solid #B0805D;
+    border-radius: 20px;
+}
+footer{
+    display: flex;
+    justify-content: space-between;
+    
+}
