@@ -1,0 +1,135 @@
+.boxen{
+    display: grid;
+    height: 200vh;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-areas: "eins zwei drei" "vier fünf sechs" "sieben acht neun";
+    gap: 6px;
+}
+.box1{
+    background-image: url(https://picsum.photos/200/377);
+    width: 100%;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    grid-area: eins;
+    position: relative;
+    
+}
+.box2{
+    background-image: url(https://picsum.photos/200/388);
+    width: 100%;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    grid-area: zwei;
+    position: relative;
+}
+.box3{
+    background-image: url(https://picsum.photos/200/399);
+    width: 100%;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    grid-area: drei;
+    position: relative;
+}
+.box4{
+    background-image: url(https://picsum.photos/200/606);
+    width: 100%;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    grid-area: vier;
+    position: relative;
+}
+
+.box5{
+    background-image: url(https://picsum.photos/200/406);
+    width: 100%;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    grid-area: fünf;
+    position: relative;
+}
+.box6{
+    background-image: url(https://picsum.photos/200/403);
+    width: 100%;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    grid-area: sechs;
+    position: relative;
+}
+.box7{
+    background-image: url(https://picsum.photos/200/402);
+    width: 100%;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    grid-area: sieben;
+    position: relative;
+}
+.box8{
+    background-image: url(https://picsum.photos/200/401);
+    width: 100%;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    grid-area: acht;
+    position: relative;
+}
+.box9{
+    background-image: url(https://picsum.photos/200/500);
+    width: 100%;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    grid-area: neun;
+    position: relative;
+}
+.overlay {
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    color: white;
+    font-weight: bold;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: #3f434481;
+    overflow: hidden;
+    width: 100%;
+    height: 0;
+    transition: .5s ease;
+  }
+.box1:hover .overlay {
+    height: 100%;
+  }
+.box2:hover .overlay {
+    height: 100%;
+  }
+.box3:hover .overlay {
+    height: 100%;
+  }
+.box4:hover .overlay {
+    height: 100%;
+  }
+.box5:hover .overlay {
+    height: 100%;
+  }
+.box6:hover .overlay {
+    height: 100%;
+  }
+.box7:hover .overlay {
+    height: 100%;
+  }
+.box8:hover .overlay {
+    height: 100%;
+  }
+.box9:hover .overlay {
+    height: 100%;
+  }
