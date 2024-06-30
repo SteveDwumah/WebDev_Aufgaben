@@ -1,0 +1,63 @@
+@font-face {
+    font-family: "Cormorant";
+    src: url(../fonts/CormorantGaramond-Regular.ttf);
+}
+*{
+    font-family: "Cormorant";
+}
+body{
+    background-color: #E9E9E0;
+}
+.boxen{
+    display: grid;
+    height: 100vh;
+    grid-template-columns: 1fr 1fr 2fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    grid-template-areas: "eins zwei drei vier" "fünf sechs sieben acht" "neun zehn elf zwölf" "ende1 ende2 ende3 ende4";
+    gap: 6px;
+}
+.box1{
+    grid-area: eins / zwei / drei;
+}
+.box2{
+    grid-area: vier;
+}
+.box3{
+    grid-area: fünf;
+}
+.box4{
+    grid-area: sechs;
+}
+.box5{
+    grid-area: neun;
+}
+.box6{
+    grid-area: zehn;
+}
+.box7{
+    grid-area: ende1;
+}
+.box8{
+    grid-area: ende2;
+}
+.box9{
+    grid-area: sieben / elf / ende3;
+}
+.box10{
+    grid-area: acht;
+}
+.box11{
+    grid-area: zwölf;
+}
+.box12{
+    grid-area: ende4;
+    width: 100px;
+}
+.box9 img{
+    max-width: 100%;
+    height: auto;
+
+}
+.box12 img{
+    width: 200px;
+}
