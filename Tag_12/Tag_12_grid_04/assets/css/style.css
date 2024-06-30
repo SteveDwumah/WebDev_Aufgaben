@@ -16,6 +16,15 @@ body{
     grid-template-areas: "eins zwei drei vier" "fünf sechs sieben acht" "neun zehn elf zwölf" "ende1 ende2 ende3 ende4";
     gap: 6px;
 }
+h1{
+    text-align: center;
+}
+header{
+    display: flex;
+    justify-content: space-between;
+    border-top: 5px solid black;
+    border-bottom: 5px solid black;
+}
 .box1{
     grid-area: eins / zwei / drei;
 }
