@@ -13,6 +13,7 @@ nav{
     width: 100%;
     background-color: white;
     top: 0;
+    z-index: 10;
 }
 .start{
     display: flex;
@@ -100,8 +101,18 @@ footer{
 .end4 a{
     font-size: 14px;
 }
-img:hover{
-    background-color: blue;
-    opacity: 2;
-    
+
+
+.pic img {
+    -webkit-filter: brightness(100%);
+    -webkit-transition: all 1s ease;
+    -moz-transition: all 1s ease;
+    -o-transition: all 1s ease;
+    -ms-transition: all 1s ease;
+    transition: all 1s ease;
+    }
+.pic img:hover {
+    -webkit-filter: brightness(75%);
 }
+    
+    
