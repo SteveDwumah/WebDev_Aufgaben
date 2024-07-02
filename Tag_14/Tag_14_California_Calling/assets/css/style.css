@@ -307,14 +307,14 @@ h2{
     
 }
 .rosebear{
-    background-color: rgb(227, 227, 227);
+    background-color: white;
     display: flex;
     flex-direction: column;
 }
 .rose{
     display: flex;
     justify-content: space-around;
-    background-color: rgb(227, 227, 227);
+    background-color: white;
     color: black;
     width: 100%;
     align-items: center;
@@ -342,7 +342,7 @@ h2{
 .rosebear2{
     display: flex;
     justify-content: space-around;
-    background-color: rgb(227, 227, 227);
+    background-color: white;
     padding-top: 10rem;
 }
 .rosebear2 img:nth-of-type(1){
@@ -358,6 +358,9 @@ footer{
     background-color: black;
     color: white;
     height: 120vh;
+    bottom: -4rem;
+    position: relative;
+    overflow: hidden;
 }
 .end{
     display: flex;
@@ -395,6 +398,41 @@ footer{
 .bilder1 img{
     transform: scale(0.4);
 }
-.bilder2 img{
+.bilder2 img:nth-of-type(1){
     transform: scale(0.4);
+    position: relative;
+    bottom: -1rem;
+    right: -10rem;
 }
+.bilder2 img:nth-of-type(2){
+    transform: scale(0.4);
+    position: relative;
+    right: -5rem;
+}
+.animation {
+    color: black;
+    background-color: white;
+    display: flex;
+    height: 16vh;
+    transform: rotate(40deg);
+    position: relative;
+    top: -24rem;
+    right: -20rem;
+    justify-content: center;
+    align-items: center;
+    font-size: 8rem;
+    
+    
+}
+.animation p{
+    animation: flow 5s linear infinite forwards;
+}
+@keyframes flow {
+    from{
+        transform: translateX(-85rem);
+    }
+    to{
+        transform: translateX(85rem);
+    }
+}
+
