@@ -425,7 +425,7 @@ footer{
     
 }
 .animation p{
-    animation: flow 5s linear infinite forwards;
+    animation: flow 5s linear infinite alternate;
 }
 @keyframes flow {
     from{
