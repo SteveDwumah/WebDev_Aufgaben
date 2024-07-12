@@ -1,0 +1,85 @@
+header{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    img{
+        display: flex;
+        justify-content: center;
+        margin-bottom: 3rem;
+        
+
+    }
+    nav{
+        display: flex;
+        gap: 5rem;
+        
+        a{
+            text-decoration: none;
+        }
+    }
+}
+.imgBig{
+
+    height: 80vh;
+    background-image: url(../img/hero_image.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: white;
+}
+.face{
+    p{
+        display: flex;
+        font-size: 5rem;
+        justify-content: center;
+    }
+}
+.middle{
+
+    div{
+        display: flex;
+        justify-content: center;
+        gap: 100px;
+    }
+}
+.rooms{
+
+}
+.pics{
+    width: 100%;
+    display: grid;
+    grid-template-areas: 'eins zwei' 
+                        'drei vier';
+    justify-content: center;
+    align-items: center; 
+    gap: 2rem;                   
+}
+.pic1{
+    width: 630px;
+    height: 500px;
+    border-radius: 10px;
+    background-image: url(../img/standard_twin_room.png);
+    align-items: center;
+}
+.pic2{
+    width: 630px;
+    height: 500px;
+    border-radius: 10px;
+    background-image: url(../img/standard_room.png);
+}
+.pic3{
+    width: 630px;
+    height: 500px;
+    border-radius: 10px;
+    background-image: url(../img/standard_view_room.png);
+}
+.pic4{
+    width: 630px;
+    height: 500px;
+    border-radius: 10px;
+    background-image: url(../img/deluxe_room.png);
+}
